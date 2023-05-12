@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>swiper-Slider</title>
+  <!-- style swiper* -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- style//* -->
+  <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <main>
+      <h1>New Movies</h1>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="asset/img/1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/4.gif" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/10.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/9.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/11.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/12.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/13.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/14.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="asset/img/15.jpg" />
+          </div>
+      </div>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 15,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: true,
+        },
+        autoplay: {
+        delay: 2800,
+        disableOnInteraction: false,
+      },
+        loop:true,
+      });
+    </script>
+</body>
+</html>
